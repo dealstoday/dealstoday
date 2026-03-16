@@ -1,0 +1,23 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="bg" cx="40%" cy="35%" r="65%">
+    <stop offset="0%" stop-color="#16213e"/>
+    <stop offset="100%" stop-color="#0a0a18"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="50%" cy="45%" r="50%">
+    <stop offset="0%" stop-color="#EF9F27" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#EF9F27" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<circle cx="150" cy="150" r="150" fill="url(#bg)"/>
+<circle cx="150" cy="150" r="150" fill="url(#glow)"/>
+<circle cx="150" cy="150" r="146" fill="none" stroke="#EF9F27" stroke-width="2" opacity="0.5"/>
+<circle cx="150" cy="150" r="138" fill="none" stroke="#EF9F27" stroke-width="0.5" opacity="0.2"/>
+<polygon points="150,52 158,78 186,78 164,94 172,120 150,104 128,120 136,94 114,78 142,78" fill="#EF9F27"/>
+<polygon points="150,52 158,78 186,78 164,94 172,120 150,104 128,120 136,94 114,78 142,78" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.3"/>
+<rect x="60" y="132" width="180" height="1.5" fill="#EF9F27" opacity="0.5"/>
+<text x="150" y="168" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="#EF9F27" letter-spacing="5">DEALS</text>
+<rect x="60" y="178" width="180" height="1" fill="#ffffff" opacity="0.1"/>
+<text x="150" y="208" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="30" fill="#ffffff" letter-spacing="5">TODAY</text>
+<text x="150" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-weight="400" font-size="11" fill="#EF9F27" letter-spacing="4" opacity="0.8">INDIA</text>
+</svg>

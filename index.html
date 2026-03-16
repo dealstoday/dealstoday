@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#0a0a18">
+<title>Deals Today India — Best Deals, Offers & Savings</title>
+<meta name="description" content="Best deals and offers on Amazon & Flipkart. Follow us on Instagram, Telegram and WhatsApp for daily deal alerts.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+
+  /* Force full page takeover — overrides Blogger wrapper */
+  html, body {
+    width: 100% !important;
+    min-height: 100vh !important;
+    background: #0a0a18 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: clamp(12px, 4vw, 40px) !important;
+  }
+
+  /* Hide all Blogger default elements */
+  header, nav, footer, #header, #footer, #navbar,
+  .navbar, .post-header, .post-title, .post-footer,
+  .blog-pager, .sidebar, #sidebar, .widget,
+  #cookieChoiceInfo, .snippet-container,
+  [id*="blog"], [class*="blog-"],
+  .share-buttons, #share-buttons,
+  h3.post-title { display: none !important; }
+
+  /* Force content area to full width */
+  .post-body, .post-content, #main, #main-wrapper,
+  .main-inner, .content-outer, .content-inner,
+  .post-outer, [class*="post"], [class*="main"],
+  [class*="content"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    float: none !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .dt-container {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    background: #0d0d20;
+    border-radius: clamp(12px, 3vw, 20px);
+    border: 1px solid rgba(239,159,39,0.15);
+    overflow: hidden;
+  }
+
+  .dt-header {
+    text-align: center;
+    padding: clamp(24px, 5vw, 48px) clamp(16px, 5vw, 40px) clamp(20px, 4vw, 36px);
+    border-bottom: 1px solid rgba(239,159,39,0.15);
+    background: linear-gradient(180deg, #16213e 0%, #0d0d20 100%);
+  }
+
+  .dt-logo {
+    width: clamp(64px, 18vw, 96px);
+    height: clamp(64px, 18vw, 96px);
+    border-radius: 50%;
+    background: #0a0a18;
+    border: 2px solid #EF9F27;
+    margin: 0 auto clamp(10px, 2.5vw, 18px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dt-logo svg { width: clamp(28px, 8vw, 44px); height: clamp(28px, 8vw, 44px); }
+
+  .dt-brand-name {
+    font-size: clamp(18px, 5.5vw, 28px);
+    font-weight: 900;
+    letter-spacing: clamp(2px, 1vw, 5px);
+    color: #EF9F27;
+    font-family: 'Arial Black', Arial, sans-serif;
+    line-height: 1.1;
+  }
+
+  .dt-brand-sub {
+    font-size: clamp(9px, 2.2vw, 13px);
+    letter-spacing: clamp(2px, 1vw, 5px);
+    color: #ffffff;
+    opacity: 0.4;
+    margin-top: 4px;
+  }
+
+  .dt-divider-line {
+    width: clamp(40px, 15vw, 80px);
+    height: 1px;
+    background: rgba(239,159,39,0.35);
+    margin: clamp(10px, 2.5vw, 16px) auto;
+  }
+
+  .dt-tagline {
+    font-size: clamp(11px, 3vw, 15px);
+    color: #ffffff;
+    opacity: 0.5;
+    line-height: 1.65;
+    padding: 0 clamp(4px, 2vw, 12px);
+  }
+
+  .dt-body {
+    padding: clamp(20px, 5vw, 40px) clamp(16px, 5vw, 36px) clamp(24px, 5vw, 40px);
+  }
+
+  .dt-section-label {
+    font-size: clamp(9px, 2vw, 11px);
+    font-weight: 700;
+    letter-spacing: clamp(2px, 0.8vw, 4px);
+    color: #EF9F27;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: clamp(12px, 3vw, 20px);
+    text-transform: uppercase;
+  }
+
+  .dt-btn {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 3vw, 16px);
+    padding: clamp(12px, 3.5vw, 18px) clamp(14px, 4vw, 22px);
+    border-radius: clamp(10px, 2.5vw, 14px);
+    margin-bottom: clamp(8px, 2vw, 12px);
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .dt-btn:hover  { opacity: 0.9; transform: translateY(-2px); }
+  .dt-btn:active { transform: scale(0.97); opacity: 0.85; }
+
+  .dt-btn-ig { background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%); color: #fff; }
+  .dt-btn-tg { background: #0088cc; color: #fff; }
+  .dt-btn-wa { background: #1da851; color: #fff; }
+
+  .dt-btn-icon {
+    width: clamp(32px, 9vw, 44px);
+    height: clamp(32px, 9vw, 44px);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: clamp(14px, 4vw, 20px);
+  }
+
+  .dt-btn-content { flex: 1; min-width: 0; }
+
+  .dt-btn-name {
+    font-size: clamp(13px, 3.5vw, 16px);
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dt-btn-handle {
+    font-size: clamp(10px, 2.5vw, 12px);
+    opacity: 0.78;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dt-btn-arrow { font-size: clamp(16px, 4vw, 22px); opacity: 0.65; flex-shrink: 0; }
+
+  .dt-divider { height: 1px; background: rgba(239,159,39,0.12); margin: clamp(16px, 4vw, 28px) 0; }
+
+  .dt-disclosure {
+    font-size: clamp(9px, 2.2vw, 11px);
+    color: #ffffff;
+    opacity: 0.28;
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 clamp(4px, 2vw, 10px);
+  }
+  .dt-disclosure a { color: #EF9F27; opacity: 0.55; text-decoration: none; }
+  .dt-disclosure a:hover { opacity: 0.9; }
+
+  .dt-footer {
+    text-align: center;
+    font-size: clamp(8px, 2vw, 10px);
+    color: #ffffff;
+    opacity: 0.18;
+    letter-spacing: clamp(1px, 0.5vw, 3px);
+    padding: clamp(10px, 2.5vw, 16px) 0 clamp(12px, 3vw, 20px);
+    text-transform: uppercase;
+  }
+
+  /* Tablet */
+  @media (min-width: 481px)  { .dt-container { max-width: 520px; } }
+  /* Desktop */
+  @media (min-width: 769px)  {
+    .dt-container { max-width: 560px; }
+    .dt-header { padding: 48px 48px 40px; }
+    .dt-body   { padding: 40px 48px 44px; }
+    .dt-btn    { padding: 18px 24px; }
+    .dt-logo   { width: 96px; height: 96px; }
+    .dt-logo svg { width: 46px; height: 46px; }
+    .dt-brand-name { font-size: 28px; letter-spacing: 5px; }
+    .dt-brand-sub  { font-size: 12px; letter-spacing: 5px; }
+    .dt-tagline    { font-size: 14px; }
+    .dt-btn-name   { font-size: 16px; }
+    .dt-btn-handle { font-size: 12px; }
+  }
+  /* Large desktop */
+  @media (min-width: 1200px) { .dt-container { max-width: 600px; } }
+  /* Small phones */
+  @media (max-width: 359px)  {
+    body { padding: 10px !important; }
+    .dt-header { padding: 20px 12px 16px; }
+    .dt-body   { padding: 16px 12px 20px; }
+    .dt-btn    { padding: 11px 12px; gap: 8px; }
+    .dt-btn-icon { width: 30px; height: 30px; font-size: 13px; }
+  }
+  /* Landscape phones */
+  @media (max-height: 500px) and (orientation: landscape) {
+    body { justify-content: flex-start !important; padding: 10px !important; }
+    .dt-header { padding: 14px 20px; }
+    .dt-logo   { width: 48px; height: 48px; }
+    .dt-logo svg { width: 22px; height: 22px; }
+    .dt-divider-line { margin: 5px auto; }
+    .dt-tagline { display: none; }
+    .dt-body { padding: 12px 20px 14px; }
+    .dt-btn  { padding: 9px 14px; margin-bottom: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="dt-container">
+
+  <div class="dt-header">
+    <div class="dt-logo">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="20,4 22.5,13 32,13 24.5,18.5 27,27.5 20,22 13,27.5 15.5,18.5 8,13 17.5,13" fill="#EF9F27"/>
+      </svg>
+    </div>
+    <div class="dt-brand-name">DEALS TODAY</div>
+    <div class="dt-brand-sub">INDIA</div>
+    <div class="dt-divider-line"></div>
+    <div class="dt-tagline">
+      Best deals. Smart savings. Every day.<br>
+      Follow us for daily Amazon &amp; Flipkart offers.
+    </div>
+  </div>
+
+  <div class="dt-body">
+
+    <div class="dt-section-label">Find Us On</div>
+
+    <a href="YOUR_INSTAGRAM_URL" target="_blank" rel="noopener noreferrer" class="dt-btn dt-btn-ig">
+      <div class="dt-btn-icon">&#9733;</div>
+      <div class="dt-btn-content">
+        <div class="dt-btn-name">Instagram</div>
+        <div class="dt-btn-handle">@dealstodayindia</div>
+      </div>
+      <div class="dt-btn-arrow">&#8250;</div>
+    </a>
+
+    <a href="YOUR_TELEGRAM_URL" target="_blank" rel="noopener noreferrer" class="dt-btn dt-btn-tg">
+      <div class="dt-btn-icon">&#9658;</div>
+      <div class="dt-btn-content">
+        <div class="dt-btn-name">Telegram Channel</div>
+        <div class="dt-btn-handle">Daily deal alerts</div>
+      </div>
+      <div class="dt-btn-arrow">&#8250;</div>
+    </a>
+
+    <a href="YOUR_WHATSAPP_URL" target="_blank" rel="noopener noreferrer" class="dt-btn dt-btn-wa">
+      <div class="dt-btn-icon">&#9742;</div>
+      <div class="dt-btn-content">
+        <div class="dt-btn-name">WhatsApp Channel</div>
+        <div class="dt-btn-handle">Join for exclusive offers</div>
+      </div>
+      <div class="dt-btn-arrow">&#8250;</div>
+    </a>
+
+    <div class="dt-divider"></div>
+
+    <div class="dt-disclosure">
+      This page contains affiliate links. If you purchase through our links,
+      we may earn a small commission at no extra cost to you.
+      <br><br>
+      <a href="#">Affiliate Disclosure</a> &nbsp;·&nbsp;
+      <a href="#">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="#">Contact</a>
+    </div>
+
+  </div>
+
+  <div class="dt-footer">© 2025 Deals Today India · All Rights Reserved</div>
+
+</div>
+
+</body>
+</html>
